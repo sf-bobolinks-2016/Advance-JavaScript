@@ -71,7 +71,7 @@ anotherFunction;
 
 //6 The same as #5 but with an IIFE
 var anotherFunction = (someFunc)();
-anotherFunction'
+anotherFunction()
 
 // 7 Passing arguments into an IIFE
 (function(message){console.log(message)})("AHH...?");
