@@ -8,20 +8,18 @@ window.onload = function() {
 
 function timer(time, message){
 
-	var counter = 0;
-
 	var interval = setInterval(count, 1000)
 
 	function count(){
 		
-		if(counter < time){
-			console.log(counter)
+		if(time > 0){
+			console.log(time)
 		}else{
 			console.log(message)
 			clearInterval(interval)
 		}
 
-		counter++;
+		time--;
 	}
 
 }
