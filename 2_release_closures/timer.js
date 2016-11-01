@@ -6,4 +6,22 @@ window.onload = function() {
 
 };
 
-function timer(){/* implement here*/}
+function timer(time, message){
+
+	var counter = 0;
+
+	var interval = setInterval(count, 1000)
+
+	function count(){
+		
+		if(counter < time){
+			console.log(counter)
+		}else{
+			console.log(message)
+			clearInterval(interval)
+		}
+
+		counter++;
+	}
+
+}

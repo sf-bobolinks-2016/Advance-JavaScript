@@ -11,9 +11,13 @@ $(document).on('ready', function() {
     
     // Without changing this event handler, re-allocated it into
     // a different scope. See hints below if needed.
-    $('#catch-me').on('click',function(){
-        alert('jQ ing!')
-    });
+
+    // SOLUTION
+    (function($){
+        $('#catch-me').on('click',function(){
+            alert('JQ ing!')
+        });
+    })(jQuery);
 
 });
 
